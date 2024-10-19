@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*NAVEGAÇÃO*/
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: rgb(255, 146, 57);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: larger;
+}
+
+.logo h1 {
+    font-family: "Fontdiner Swanky", serif;
+    color: rgb(4, 73, 96);
+}
+
+.menu {
+    flex: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.menu a {
+    color: rgb(4, 73, 96);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 20px 16px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: rgb(255, 224, 188);
+    border-bottom: 4px solid rgb(4, 73, 96);
+}
+
+.login {
+    flex: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#botaolog:hover {
+    background-color: bisque;
+    color: rgb(4, 73, 96);
+}
+
+#botaolog {
+    background: rgb(4, 73, 96);
+    padding: 15px 25px;
+    color: rgb(255, 224, 188);
+    margin-right: 15%;
+    border-radius: 5px;
+}
+
+/*BANNER*/
+
+.banner {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#saibamais {
+    background-color: bisque;
+    width: 300px;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(4, 73, 96);
+    font-family: "Roboto", serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*VANTAGENS*/
+
+section.vantagens {
+    padding: 80px 0px;
+}
+
+#pre-vtg {
+    font-size: 3em;
+    text-align: left;
+    font-family: "Roboto", serif;
+    color: rgb(4, 73, 96);
+}
+
+.vantagens .bloco {
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .bloco .img-bloco img {
+    max-width: 420px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 10%;
+    flex: 50%;
+    text-align: center;
+}
+
+.vantagens .bloco .txt-bloco h3 {
+    font-size: 3em;
+    text-align: center;
+    font-family: "Roboto", serif;
+    color: rgb(255, 146, 57);
+}
+
+.vantagens .bloco .txt-bloco p {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto", serif;
+    color: rgb(4, 73, 96);
+    font-size: larger;
+}
+
+/*DESTAQUE*/
+
+#pre-destaque {
+    font-size: 3em;
+    text-align: center;
+    font-family: "Roboto", serif;
+    color: rgb(4, 73, 96);
+    margin: 20px;
+}
+
+#desc_destaque {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    background-color: bisque;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.itens {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img-destaque img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.txt-destaque h3 {
+    margin-top: 10px;
+    font-family: "Roboto", serif;
+    color: #044960;
+}
+
+/*REVIEWS*/
+
+#pre-review {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: #044960;
+    text-align: center;
+}
+
+#desc-review {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews .avaliacao {
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: bisque;
+    padding: 2%;
+    border-radius: 50px;
+}
+
+.reviews .avaliacao .img-avaliacao img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .avaliacao .txt-avaliacao h3 {
+    font-size: 1.2em;
+    color: #044960;
+}
+
+.reviews .avaliacao .txt-avaliacao p {
+    font-size: 20px;
+    font-size: larger;
+}
+
+/*CURSOS*/
+
+.cursos-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cursos{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.cursos-lista h3{
+    margin: 10px 0;
+    font-size: 1.2em;
+    color:rgb(255, 146, 57);
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.cursos li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+
+}
+
+.cursos li a{
+    text-decoration: none;
+}
+
+.cursos li a:hover{
+    color:rgb(255, 146, 57);
+}
+
+#titulo-cursos{
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.background{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/background-lista.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+}
+
+/*FORMULARIO*/
+
+.formulario {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #044960;
+}
+
+label {
+    margin-top: 15px; 
+    display: block; 
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #044960;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #044960;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(255, 146, 57);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label > input[type="checkbox"] + span {
+    color: #044960;
+}
+
+.bg-form{
+    width: 100%;
+    height: 700px;
+    background-color: bisque;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    margin-top: 100px;
+    padding-top: 1px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: rgb(255, 146, 57); 
+    color: white; 
+    padding: 20px; 
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.footer-left {
+    flex: 1;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+    border-radius: 50%;
+}
+
+.links-bloco {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cursos-links, .pagina-links {
+    margin-bottom: 20px;
+}
+
+.footer-content h4{
+    margin: 0 0 10px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content li {
+    margin-bottom: 5px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+#logo-footer{
+    font-family: "Fontdiner Swanky", serif;
+    color: rgb(4, 73, 96); 
+}
+
+/*AJUSTES DE RESPONSIVIDADE*/
+
+/*AJUSTE DA NAVBAR*/
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-flow: column wrap;
+        height: auto;
+    }
+
+    .logo {
+        flex: 100%;
+        margin-left: 0;
+    }
+
+    .menu {
+        flex: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    .login {
+        flex: 100%;
+        margin-top: 10px;
+    }
+
+    #botaolog {
+        margin-right: 0;
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .logo {
+        flex: 100%;
+        margin-left: 0;
+        font-size: medium;
+    }
+
+    .menu {
+        flex: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .login {
+        flex: 100%;
+    }
+
+    #botaolog {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+}
+
+/*AJUSTE DO BANNER*/
+
+@media (max-width: 768px) {
+    .banner {
+        height: 500px; 
+        background-position: top; 
+    }
+
+    .banner-texto {
+        font-size: 1.5em; 
+    }
+
+    #saibamais {
+        width: 80%; 
+        padding: 12px 24px;
+        font-size: 1em;
+        margin-top: 100px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 400px; 
+        background-position: top; 
+    }
+
+    .banner-texto {
+        font-size: 1.2em; 
+        margin-bottom: 20px; 
+    }
+
+    #saibamais {
+        width: 90%; 
+        padding: 10px;
+        font-size: 0.9em;
+        margin-top: 50px;
+    }
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* AJUSTE DAS VANTAGENS */
+
+
+@media (max-width: 768px) {
+    #pre-vtg {
+        font-size: 2.5em;
+        text-align: center; 
+    }
+
+    .vantagens .bloco {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .vantagens .bloco .img-bloco img {
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .vantagens .bloco .txt-bloco h3 {
+        font-size: 2.5em; 
+    }
+
+    .vantagens .bloco .txt-bloco p {
+        font-size: 1.2em; 
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #pre-vtg {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .vantagens .bloco {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .vantagens .bloco .img-bloco img {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+    }
+
+    .vantagens .bloco .txt-bloco h3 {
+        font-size: 2em;
+    }
+
+    .vantagens .bloco .txt-bloco p {
+        font-size: 1em;
+    }
+}
+
+/*AJUSTE DOS DESTAQUES*/
+
+@media (max-width: 768px) {
+    #pre-destaque {
+        font-size: 2.5em; 
+    }
+
+    #desc_destaque {
+        font-size: 1.1em; 
+        padding: 0 20px;
+    }
+
+    .destaque {
+        margin-top: 60px; 
+        padding: 5% 3%; 
+    }
+
+    .itens {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    #pre-destaque {
+        font-size: 2em; 
+        margin: 10px;
+    }
+
+    #desc_destaque {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .destaque {
+        margin-top: 40px;
+        padding: 10%;
+    }
+
+    .itens {
+        width: 100%;
+    }
+
+    .img-destaque img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+/*AJUSTE DOS REVIEWS*/
+
+@media (max-width: 768px) {
+    #pre-review {
+        font-size: 2.5em; 
+        margin-top: 60px;
+    }
+
+    #desc-review {
+        font-size: 1.1em; 
+        padding: 0 20px; 
+    }
+
+    .reviews .avaliacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 4%; 
+    }
+
+    .reviews .avaliacao .img-avaliacao img {
+        height: 120px; 
+        width: 120px;
+    }
+
+    .reviews .avaliacao .txt-avaliacao h3 {
+        font-size: 1.1em; 
+    }
+
+    .reviews .avaliacao .txt-avaliacao p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #pre-review {
+        font-size: 2em; 
+        margin-top: 40px;
+    }
+
+    #desc-review {
+        font-size: 1em;
+        padding: 0 10px; 
+        margin-bottom: 40px;
+    }
+
+    .reviews .avaliacao {
+        flex-direction: column;
+        padding: 6%; 
+    }
+
+    .reviews .avaliacao .img-avaliacao img {
+        height: 100px; 
+        width: 100px;
+    }
+
+    .reviews .avaliacao .txt-avaliacao h3 {
+        font-size: 1em;
+    }
+
+    .reviews .avaliacao .txt-avaliacao p {
+        font-size: 0.9em;
+    }
+}
+
+/*AJUSTE DA LISTA*/
+
+@media (max-width: 768px) {
+    .cursos {
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    #titulo-cursos {
+        font-size: 1.3em;
+    }
+
+    .cursos-lista h3 {
+        font-size: 1.1em;
+    }
+
+    .cursos li {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .cursos {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    #titulo-cursos {
+        font-size: 1.2em;
+    }
+
+    .cursos-lista h3 {
+        font-size: 1em;
+    }
+
+    .cursos li {
+        font-size: 1em;
+    }
+
+    .background {
+        height: 600px;
+    }
+}
+
+/*AJUSTE DO FOOTER*/
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links-bloco {
+        gap: 20px;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
